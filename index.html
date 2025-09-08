@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>ALL HAIL 阿橙 · The One True Orange</title>
+	<meta name="description" content="A ridiculously orange tribute to Ah Chang (阿橙) – the juiciest legend." />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="alternate icon" href="favicon.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script defer src="script.js"></script>
+</head>
+<body>
+	<div class="noise-overlay" aria-hidden="true"></div>
+	<header class="hero" id="top">
+		<h1 class="sparkle" title="Totally not a cult."><span class="cn">阿橙</span> · ORANGE SUPREMACY</h1>
+			<p class="tagline">Maximum juice. Minimal sense. All 阿橙.</p>
+			<div class="cta-row">
+				<button id="summonBtn" class="btn primary">Spawn 🍊</button>
+				<button id="overloadBtn" class="btn ghost">OVERLOAD 🔥</button>
+				<button id="punBtn" class="btn ghost">Pun 😂</button>
+				<button id="memeModeBtn" class="btn ghost">Meme Mode 🤪</button>
+				<button id="modeToggle" class="btn ghost" aria-pressed="false">Night Peel 🌙</button>
+			</div>
+		<p class="hint">(Psst... try the Konami Code ↑ ↑ ↓ ↓ ← → ← → B A)</p>
+		<div class="vitaminc" role="region" aria-label="Vitamin C Meter">
+			<div class="meter-label">Vitamin C Meter:</div>
+			<div class="meter"><div id="cMeter" class="fill" style="width:5%"></div></div>
+			<button id="consumeBtn" class="btn tiny">Consume Orange 🍊</button>
+			<span id="cValue" class="c-value">5%</span>
+		</div>
+	</header>
+
+	<section class="marquee-wrapper" aria-hidden="true">
+		<div class="marquee" id="marquee">
+			<span>Orange you glad 阿橙 exists? · Pulp fiction IRL · Peel the power · Citrus > Chaos · Zest in class · Squeeze the day · Vitamin C(elebrity) · Tangy legend · Ultra Juicy Mode Pending...</span>
+		</div>
+	</section>
+
+	<main>
+			<section class="panel facts" id="facts">
+				<h2>Juicy Bits</h2>
+			<ul class="fact-list" id="factList">
+					<li>Orange = stealth berry (hesperidium).</li>
+					<li>No rhyme. No weakness.</li>
+					<li>One fruit. 100% C. Efficiency.</li>
+					<li>Evergreen like group chat energy.</li>
+					<li>Navel = clone squad.</li>
+			</ul>
+			<button id="addFact" class="btn tiny">Add Random Fact 🍊</button>
+		</section>
+
+		<section class="panel pun-zone" id="puns">
+			<h2>Pun Dispenser</h2>
+			<div id="punDisplay" class="pun-display" aria-live="polite">Click &quot;Squeeze a Pun&quot; above to unleash citrus-level comedy.</div>
+		</section>
+
+			<section class="panel memes" id="memes">
+				<h2>Meme Juice</h2>
+				<div class="meme-box" id="memeBox" aria-live="polite">🍊 Loading peak orange meme energy...</div>
+				<button id="memeNext" class="btn tiny">Next Meme ⚡</button>
+			</section>
+
+		<section class="panel gallery" id="gallery">
+			<h2>Orange Generator</h2>
+				<p>Click Spawn. Get juice. Click oranges for C. Chaos slider below.</p>
+			<div id="orangeField" class="orange-field" aria-label="Floating oranges" role="list"></div>
+				<label class="intensity" for="intensityRange">Intensity <input id="intensityRange" type="range" min="1" max="15" value="5" /> <span id="intensityVal">5</span></label>
+		</section>
+
+		<section class="panel rituals" id="rituals">
+				<h2>Ritual Speedrun</h2>
+				<ol>
+					<li>Click title 8×</li>
+					<li>Konami</li>
+					<li>100% C</li>
+				</ol>
+				<p class="result" id="ritualStatus">Progress: <span id="ritualProgress">0</span>/3</p>
+		</section>
+
+		<section class="panel countdown" id="countdown">
+			<h2>Time Until Next Peel Cycle</h2>
+			<div class="timer" id="timer">--:--:--</div>
+			<p class="sub">Resets daily at local midnight. Prepare your zest.</p>
+		</section>
+
+			<section class="panel credits" id="credits">
+				<h2>Credits</h2>
+				<p>For 阿橙. Peak citrus. Stay hydrated.</p>
+			</section>
+	</main>
+
+	<footer class="footer">
+		<p>Made for 阿橙 · <a href="#top">Back to top ⬆</a></p>
+	</footer>
+
+	<template id="factTemplate">
+		<li></li>
+	</template>
+	<template id="orangeTemplate">
+		<div class="float-orange" role="listitem" aria-label="Orange" title="🍊 Powered by 阿橙"></div>
+	</template>
+
+</body>
+</html>
